@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYIFA AYATULLOH - Electrical Maintenance | Power Plant</title>
+    <!-- Google Fonts untuk kesan modern -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+       <style>
+        /* Styling Umum */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .badge {
+            background-color: #f59e0b;
+            color: #0f172a;
+            font-size: 12px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            color: #94a3b8;
+            max-width: 600px;
+            margin: 0 auto 30px auto;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn.primary {
+            background-color: #f59e0b;
+            color: #0f172a;
+        }
+
+        .btn.primary:hover {
+            background-color: #d97706;
+        }
+
+        .btn.secondary {
+            background-color: transparent;
+            color: white;
+            border: 2px solid #475569;
+        }
+
+        .btn.secondary:hover {
+            border-color: white;
+        }
+
+        /* Sections */
+        .section {
+            padding: 60px 0;
+        }
+
+        .bg-light {
+            background-color: #ffffff;
+            border-top: 1px solid #e2e8f0;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #0f172a;
+        }
+
+        .section-desc {
+            color: #64748b;
+            margin-bottom: 30px;
+        }
+
+        /* Grid Keahlian */
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1e293b;
+        }
+
+        .card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
+        /* Grid Proyek */
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 1200px) {
+            .project-grid {
+                grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            }
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+        }
+
+        .project-video-container {
+            width: 100%;
+            height: 200px;
+            background-color: #000;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-video-container video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #1e293b;
+        }
+
+        .project-info p {
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .footer h2 {
+            color: white;
+        }
+
+        .footer p {
+            color: #94a3b8;
+        }
+
+        .contact-info {
+            margin: 20px 0;
+            font-size: 1.05rem;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+            color: white;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #64748b;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HERO SECTION / PERKENALAN -->
+    <header class="hero">
+        <div class="container">
+            <span class="badge">Electrical Maintenance | Power Plant</span>
+            <h1>SYIFA AYATULLOH</h1>
+            <p class="subtitle">Spesialis Instalasi, Pengujian Sistem Kelistrikan, & Perawatan Panel Industri</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/6283849023582" target="_blank" class="btn primary">Hubungi WhatsApp</a>
+                <a href="#projects" class="btn secondary">Lihat Proyek</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- TENTANG SAYA -->
+    <section class="section about">
+        <div class="container">
+            <h2>Tentang Saya</h2>
+            <p>Lulusan D3 Teknik Listrik dengan pengalaman di bidang Electrical Maintenance, Electrical Installation, Power Distribution Systems, dan Electrical Troubleshooting melalui pengalaman kerja di industri power plant serta perusahaan elektrikal dan manufaktur. Berpengalaman menangani preventive dan corrective maintenance pada 5 kategori peralatan utama, meliputi motor listrik 3 fasa, generator, transformator, panel distribusi, dan GIS, dengan cakupan sistem kelistrikan hingga 220 kV, serta instalasi dan terminasi kabel 1 kV dan 10 kV. Memiliki kompetensi dalam electrical testing, panel assembly, wiring, grounding system, interpretasi wiring diagram, serta pengoperasian AutoCAD, Megger, dan Digital Multimeter. Memiliki Sertifikat Kompetensi Instalasi Tenaga Listrik dari Kementerian ESDM serta Sertifikat Kompetensi Elektrik dengan predikat Sangat Baik dari PT Baoshuo Taman Industry Investment Group. Tertarik mengembangkan karier sebagai Electrical Technician, Electrical Maintenance Technician, atau Maintenance Technician di industri power plant, pertambangan, smelter, dan manufaktur.</p>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN / EXPERTISE -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2>Keahlian & Layanan</h2>
+            <div class="expertise-grid">
+                <div class="card">
+                    <h3>⚡ Testing & Commissioning</h3>
+                    <p>Pengujian komponen kelistrikan dan pengukuran menggunakan alat instrumen sesuai standar operasional prosedur.</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ Panel Kontrol & Wiring</h3>
+                    <p>Perakitan, wiring, dan pemeliharaan panel distribusi/kontrol dengan penataan jalur kabel yang rapi dan aman.</p>
+                </div>
+                <div class="card">
+                    <h3>🔍 Industrial Electrical</h3>
+                    <p>Instalasi motor listrik, sistem kelistrikan mesin pabrik, serta pengawasan prosedur lifting perangkat berat.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERI PROYEK / DOKUMENTASI -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Dokumentasi Proyek</h2>
+            <p class="section-desc">Berikut adalah portofolio penanganan pekerjaan kelistrikan dan industri di lapangan:</p>
+            
+            <div class="project-grid">
+                <!-- Proyek 1: Testing Switchgear -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="IMG_3542.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Testing & Measurement (Switchgear)</h3>
+                        <p>Proses pengujian komponen kelistrikan menggunakan kabel instrumen dengan penerapan APD lengkap.</p>
+                    </div>
+                </div>
+                
+                <!-- Proyek 2: Wiring Panel Kontrol -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="IMG_3872.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Perakitan & Wiring Panel Kontrol</h3>
+                        <p>Pengecekan komponen dan penataan jalur kabel terminal panel distribusi industri.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 3: Terminal Box Motor Listrik -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="IMG_3955.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Instalasi Motor Listrik</h3>
+                        <p>Penyambungan kabel (wiring connection) pada terminal box motor penggerak mesin.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 4: Lifting & Penempatan Panel -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="IMG_4008.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Mobilisasi & Lifting Perangkat</h3>
+                        <p>Pengawasan dan proses pengangkatan perangkat berat panel industri menggunakan crane.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 5 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek5.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inspeksi Kualitas Air & Lingkungan</h3>
+                        <p>Pengukuran parameter TSS, pH, dan suhu di area IPAL Domestik serta settling pond industri.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 6 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek6.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Integrasi Sistem CEMS</h3>
+                        <p>Pendampingan instalasi dan kalibrasi alat Continuous Emission Monitoring System pada cerobong.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 7 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek7.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pemeliharaan Trafo Daya</h3>
+                        <p>Pengecekan rutin dan pembersihan bushing transformator tegangan menengah.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 8 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek8.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pemeriksaan Grounding System</h3>
+                        <p>Pengukuran resistansi pentanahan panel utama guna mencegah arus bocor dan korsleting.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 9 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek9.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Troubleshooting Inverter & PLC</h3>
+                        <p>Analisis gangguan sistem kendali mesin produksi otomatis berbasis Programmable Logic Controller.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 10 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek10.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Manajemen Limbah B3 Industri</h3>
+                        <p>Pengelolaan penyimpanan sementara limbah bahan berbahaya dan beracun sesuai standar lingkungan.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 11 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek11.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pemasangan Kabel Tray & Ladder</h3>
+                        <p>Instalasi jalur penopang kabel distribusi utama di area plant produksi pabrik.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 12 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek12.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Audit Energi & Kelistrikan</h3>
+                        <p>Evaluasi efisiensi konsumsi daya listrik pada sistem utilitas pabrik skala besar.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 13 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek13.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pengujian Megger Kabel Power</h3>
+                        <p>Pengecekan insulasi ketahanan kabel tegangan menengah terhadap potensi breakdown.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 14 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek14.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pemasangan Sensor Proteksi Mesin</h3>
+                        <p>Integrasi sensor temperatur dan vibrasi pada bearing motor induksi utama.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 15 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek15.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Penyusunan Dokumen UKL-UPL</h3>
+                        <p>Analisis dampak lingkungan dan perizinan operasional fasilitas pabrik industri.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 16 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek16.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Perbaikan Sinyal Kontrol Instrumen</h3>
+                        <p>Kalibrasi dan perbaikan jalur komunikasi data sensor pada ruang kontrol utama.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 17 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek17.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Aksi Bersih Lingkungan & TPS Liar</h3>
+                        <p>Koordinasi program clean-up dan edukasi pengelolaan sampah bersama komunitas lokal.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 18 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek18.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Instalasi Lampu Penerangan Pabrik</h3>
+                        <p>Pemasangan sistem pencahayaan efisiensi tinggi di area gudang logistik dan workshop.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 19 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek19.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Pemetaan Sektoral & ArcGIS</h3>
+                        <p>Pembuatan peta sebaran wilayah dan analisis rantai pasok komoditas berbasis spasial.</p>
+                    </div>
+                </div>
+
+                <!-- Proyek 20 -->
+                <div class="project-card">
+                    <div class="project-video-container">
+                        <video controls muted autoplay loop>
+                            <source src="proyek20.MOV" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
+                    <div class="project-info">
+                        <h3>Inspeksi K3 & Safety Briefing</h3>
+                        <p>Pengawasan kepatuhan prosedur keselamatan kerja harian bagi teknisi di area plant.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- KONTAK & FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <h2>Mari Berkolaborasi</h2>
+            <p>Butuh jasa instalasi, perawatan, atau proyek kelistrikan? Hubungi saya melalui:</p>
+            <div class="contact-info">
+                <p>📱 WhatsApp: <strong>+6283849023582</strong></p>
+                <p>📧 Email: <strong>syifaayatullOH@gmail.com</strong></p>
+            </div>
+            <p class="copyright">&copy; 2026 SYIFA AYATULLOH All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
